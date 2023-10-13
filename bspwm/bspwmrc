@@ -1,0 +1,80 @@
+#! /bin/sh
+
+#-------------------/*
+#	bspwm config
+#-------------------*/
+
+
+#----------------
+#	at start
+#----------------
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+xsetroot -cursor_name left_ptr &
+
+#----------------
+
+
+#----------------
+#	workspaces
+#----------------
+
+bspc monitor -d			1 2 3 4 5
+
+#----------------
+
+
+#----------------
+#	border/gaps
+#---------------
+
+bspc config border_width	1
+bspc config window_gap		10
+
+bspc config normal_border_color "#ffffff"
+bspc config active_border_color "#000000"
+bspc config focused_border_color "#000000"
+
+bspc config presel_feedback_color "#000000"
+
+#----------------
+
+
+#----------------
+#	split
+#----------------
+
+bspc config split_ratio		0.5
+
+#----------------
+
+
+#----------------
+#	focus
+#----------------
+
+bspc config focus_follows_pointer true
+bspc config pointer_modifier	super
+
+#----------------
+
+#----------------
+#	when one window
+#----------------
+
+bspc config single_monocle	false
+
+bspc config borderless_monocle 	false
+bspc config gapless_monocle	false
+bspc config paddingless_monocle false
+
+#----------------
+
+#----------------
+#	rules
+#----------------
+
+
+
+#----------------
+
