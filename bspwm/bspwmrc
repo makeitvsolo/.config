@@ -11,6 +11,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 feh --bg-scale ~/.config/feh/background.jpg
+polybar main &
 xsetroot -cursor_name left_ptr &
 
 #----------------
