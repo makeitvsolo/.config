@@ -1,3 +1,9 @@
+#-----------------/*
+#	helix config
+#-----------------*/
+
+theme = "main"
+
 [editor]
 line-number = "absolute"
 mouse = false
